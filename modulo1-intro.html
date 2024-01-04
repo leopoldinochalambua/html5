@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceitos Básicos</title>
-    
 </head>
 <body>
-    <h1>Módulo 1 - Curso de HTML5 + CSS</h1>
-    <h3>Conhecendo as tags</h3>
-    <h3>Conceitos Iniciais</h3>
-    <hr>
 
 <h1>Conceito</h1>
     <hr>
@@ -118,6 +113,7 @@ Não confunda <strong> formatos </strong>com <strong> tipos! </strong> Esses doi
 <p><strong> Quais são os formatos de images?</strong></p>
 <p> Existem vários formatos de imagem, cada um com suas características, vantagens e desvantagens. Porém, vamos nos focar aqui nos dois formatos compactados mais 
 usados para a criação de sites: JPEG e PNG. </p>
+<img src="imagens/" alt="">
 <p> O algoritmo de compactação JPEG é usado para gerar imagens fotográficas com um 
 tamanho extremamente reduzido. Ele foi criado em 1983 por Eric Hamilton e hoje é 
 gerenciado pelo Joint Photographics Experts Group. Ele é amplamente utilizado por câmeras digitais modernas e programas de tratamento de imagens.  A grande vantagem do uso de arquivos JPG (em formato JPEG) é gerar arquivos muito pequenos e que ocupam pouco espaço em disco. Isso é muito importante, pois quando colocarmos nosso site no ar, ele tem que ser leve e carregar as imagens muito rapidamente. Só toma cuidado para não exagerar na hora de configurar o nível de compactação. Isso pode fazer com que sua imagem fique horrível e toda borrada (dá só uma olhada na imagem abaixo). </p>
@@ -164,186 +160,5 @@ limitada). </p>
 <h2>Semântica</h2>
 <h3>Formatação de textos</h3>
 <hr>
-<p>A semântica em HTML, serve para a formatação de texto, no significado das tags, podemos uasr atualmente tags novas em vez de usar as tags antigas. Tudo o que for forma é de responsabilidade de CSS. Emboras as tags antigas ainda podem estara a funcionar, é fortemente não recomendado usar.</p>
-
-<h3>Negrito e &Tálico</h3>
-<p>As formatações para negrito, podem ser colocadas de forma semântica e não semântica, dependendo do que queremos podera ser semantico ou não.</p>
-
-<p>Neste paragrafo temos um <b> um termo em negrito</b> usando a tag B, semântico.</p>
-<p>Neste paragrafo temos um <strong> um termo em DESTAQUE</strong> usando a tag STRONG não semântico.</p>
-<img src="imagens/13.png" alt="">
-
-<P>Para uma frase temos <i>um termo em itálico</i> usando a tag i, que é não semântico</P>
-<P>Para uma frase temos <em>um termo em ênfase</em> usando a tag em, que é semântico</P>
-<img src="imagens/14.png" alt="">
-
-<h3>Formatações adicionais</h3>
-<p>Podemos criar também <mark > um texto marcado </mark> usando a tag MARK.</p>
-    
-<p> Em html não exiest uma forma <mark style="background-color: rgb(57, 76, 180);"> para mudar essa cor </mark>, usando css dentro da tag.</p>
-
-<h3>Textos Grandes e Pequenos</h3>
-<p>Vamos criar um <big> texto grande </big> e um <small> texto pequeno </small> nesse parágrafo. É de salientar qua a tag BIG, já está obsoleto.</p>
-
-<p><del> Testos excluido</del>, podem ser marcados para eles serem lidos mais não considerado.</p>
-
-<p><ins> Testos inseridos</ins>, podem ser marcados para eles serem lidos e considerado como adicionados.</p>
-
-<p> Textos sobreescritos tem como exemplo x <sup>20</sup>+2 </p>
-
-<p> Textos subreescrito tem como exemplo h<sub>2</sub>O </p>
-
-<h2>Citação e códigos</h2>
-<hr>
-<h3>codigos fonte</h3>
-<p>O comando <mark> document.getElementById('TESTE')</mark>, é escrito em linguagem JavaScript</p>
-
-<p>Porém essa representação deve ser feita com a tag code</p>
-<p>O comando <mark><code> document.getElementById('TESTE')</code></mark>, é escrito em linguagem JavaScript</p>
-
-<p>O outro exemplo é mostrado abaixo,com a tag pre e code</p>
-<pre>
-    <code>
-        num = int(input('Digite um número'))
-        if num % 2 == 0:
-            print(f'0 número {num} é PAR')
-        else:
-            print(f'0 número {num} é ÍPAR')
-        print('Fim do programa')
-    </code>
-</pre>
-
-<h3>Citação</h3>
-<p>Uma citação é quando usamos as palavaras de outras pessoas. <q> Quem não ouve concelho não sega a velho</q></p>
-
-<p>Para uma citação mais longa podemos uar a <mark> blockquote</mark>. Ela aparece uns pixel dentro do parágrafo.</p>
-
-As abrevisções podem ser feitas da seguinte forma:<abbr title="HyperText Markup Language"> HTML </abbr> e <abbr title="Cascading Style Sheet"> CSS</abbr>.
-
-<h2>Listas</h2>
-<hr>
-<p>As principais listas em HTML SÃO: OL, UO e DL. Em cada lista encontramos a LI.</p>
-<H3>Listas ordenadas</H3>
-<p>As listas ordenadas são aquelas que seguem uma numeração sequencial.</p>
-<ol>
-    <li>Ver o curso</li>
-    <li>Fazer anotação</li>
-    <li>Praticar</li>
-</ol>
-
-<p>A ordem de sequencia podem ser definidos com a tag type dentro da tag OL, usando a opção star, para alfabeto, númeração romana e números cardinais.</p>
-
-<h3>Listas não ordenadas</h3>
-<p>Essas listas são aquelas que a ordem não faz diferença</p>
-<ul>
-    <li>Fazer anotação</li>
-    <li>praticar</li>
-    <li>ver o curso</li>
-</ul>
-<p>Diferente da OL, a opção type só permite mudar os circulos. Dessa forma é possivel juntar as lisas OL, dentro das UL e vice versa.</p>
-
-<h3>Juntando Listas</h3>
-
-<ol>
-    <li>Antigas</li>
-        <ul>
-            <li>Cliper</li>
-            <li>Visual Basic</li>
-             <li>Fortran</li>
-        </ul>
-    <li>Novas</li>
-        <ul>
-             <li>PHP</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-        </ul>
-</ol>
-<h3>Listas de definição</h3>
-<p>As listas de definição serve para:</p>
-<dl>
-    <dt>HTML</dt>
-    <dd>Linguagem de marcação para conteudo de um site</dd>
-    <dt>CSS</dt>
-    <dd>Linguagem de marcação para criação do designe do site</dd>
-    <dt>JavaScritp</dt>
-    <dd>Linguagem de Programação para interatividade do site</dd>
-</dl>
-<h2>Links</h2>
-<hr>
-<p>hiperlinks servem para direcionar, um conteúdo para uma determinada origem. Os links são criados com a tag a (ancora). Os links podem ser internos externos, e links de downloadas.</p>
-
-<h3>Links Internos</h3>
-<p>Links internos, são aqueles que apontam um conteúdo para dentro do mesmo site</p>
-
-<p>Clique aqui para a <a href="Página 1.html"> Página 1</a></p>
-
-<h3>Links Externos</h3>
-<p>São aqueless que direcina de um site para um conteúdo dentro de outro site. Quando o conteúdo é para outro site, devemos usar algumas configurações extras dentro da tag a para que o usuário não saia de vez do seu site.</p>
-
-<p>Voçê pode usar meu <a href="https://github.com/LeopoldinoPChalambua" target="_blank" rel="external"> repositório do Github</a></p>
-
-<p>O parâmetro <strong>target</strong> indica o navegador a abrir numa aba nova.</p>
-
-<h3>Link de download</h3>
-<p>Esses links são aqueles que nos dam a possibilidade de baixar um conteúdo da internet. Para isso é necessario consultar os formatos suportados para esse fim.</p>
-
-<H3>Links de downloas</H3>
-<ul>
-    <li><a href="livro.pdf" download="livro.pdf" type="aplication/pdf" target="_blank">Baixar pdf</a></li>
-    <li><a href="audio/01. C4 Pedro - Último Poeta.mp3" target="_blank">Baixar mp3</a></li>
-</ul>
-<p>O link seguinte vai mostrar todas as referencias para o aplication.</p>
-<h2>Mídias</h2>
-<hr>
-
-<h3>Imagens dinâmicas</h3>
-
-<p>Imagens dinâmicas são aquelas que se adaptam de acordo com a resolução da tela do usuário.</p>
-<p>Aumente e diminua o tamannho do navegador,para ver as imagens dinâmincas.</p>
-
-<picture>
-    <source media="(max-width: 200px)" srcset="imagens/19.png" type="image/">
-    <source media="(max-width: 600px)" srcset="imagens/21.png" type="image/">
-    <img src="imagens/20.png" alt="imgG">
-    <p>A ordem deve ser seguida a ordem para que as imagens funcionen.</p>
-</picture>
-
-<h3>Audio</h3>
-<hr>
-<p>Os audios são adicinados com atag <strong>audio</strong> e o parametro controls, para que apareça os controles de audio. </p>
-<p>Clique no play abaixo para reproduzir o audio.</p>
-<audio src="audio/01. C4 Pedro - Último Poeta.mp3" controls></audio>
-<p>Para mais informações de compatibilidade veja a lista de types.</p>
-
-<h3>Vídeo</h3>
-<hr>
-<p>Seguindo a mesma linha os videsos são adicinados com a tag <strong>video </strong>. Podemos criar uma imagens, para ser colocada como uma tambe com a tag o parametro poster, dentro da tag video.
-</p> 
-<p>Os videos podem ser locais, aqueles que são hospedados no proprio site. </p>
-
-<video src="audio/34 - Formatos de vídeo para seu site - @Curso em Vídeo HTML5 e CSS3.mp4" width="880" controls></video>
-
-<h3>Vídeos Externos</h3>
-
-<p>Vídeos Externos, são aqueles que estão ospedados em outro outros sites, como por exemplo no youtube.</p>
-
-<h1>CSS</h1>
-<hr>
-<h3>Inline</h3>
-<p>Estilos inline são aqueles colocados dentro da linha do codigo, normalmente na guia body. Usado simplesmente para configurações pontuais.</p>
-
-<h3>Capítulo 1</h3>
-<h4>Capítulo 1.1</h4>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure dignissimos, praesentium cum aperiam rem placeat. Dolores cum optio aut nostrum doloremque vero perferendis! Magnam quaerat reprehenderit itaque error facere.</p>
-<P>A desvantagem é que deve ser colocada em todas as tags uma a uma, e polui o codígo.</P>
-
-<h3>CSS Externos</h3>
-<p>CSS externos são aqueles que estão em outro arquivo. Para isso <a href="test02.html"> veja a pagina 2</a></p>
-
-<h1>Fim do Módulo 1</h1>
-<h3>Clique para o <a href="modulo2.html"> Módulo 2</a></h3>
-<h3>Clique para o <a href="modulo3.html"> Módulo 3</a></h3> 
-<h3>Clique para o <a href="modulo4.html"> Módulo 4</a></h3> 
-<h3>Clique para o <a href="modulo5.html"> Módulo 5</a></h3> 
 </body>
-</html> 
+</html>
